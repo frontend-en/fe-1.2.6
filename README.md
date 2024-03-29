@@ -1,6 +1,7 @@
 Задание:
 	Дан объект:
-``` const userProfileData = {
+```
+  const userProfileData = {
   userName: "Алексей",  // обязательное свойство
   userDescription: "Любитель React и фронтенд разработки",  // обязательное свойство
   openForWork: true,  // необязательное свойство
