@@ -11,11 +11,7 @@ const userProfileData = {
     city: "Москва",
     country: "Россия"
   },
-  interests: ["программирование", "путешествия", "фотография"],
-  socialLinks: {
-    linkedin: "https://linkedin.com/in/alexey",
-    github: "https://github.com/alexey"
-  }
+  interests: ["программирование", "путешествия", "фотография"]
 };
 
 

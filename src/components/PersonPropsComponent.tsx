@@ -1,4 +1,3 @@
-import React from 'react';
 
 type UserProfileData = {
   userName: string;
@@ -12,17 +11,13 @@ type UserProfileData = {
     country: string;
   },
   interests: string[];
-  socialLinks: {
-    linkedin?: string;
-    github: string;
-  }
 }
 
 type UserProfileProps = {
   userData: UserProfileData;
 }
 
-export const UserProfile: React.FC<UserProfileProps> = ({ userData }) => {
+export const UserProfile = ({ userData }: UserProfileProps) => {
   return (
     <div>
       <h1>Профиль пользователя: {userData.userName}</h1>
@@ -38,13 +33,10 @@ export const UserProfile: React.FC<UserProfileProps> = ({ userData }) => {
         {userData.interests.length && userData.interests.map((interest, index) => <li key={index}>{interest}</li>
         )}
       </ul>
-      <h2>Социальные сети:</h2>
-      <p>LinkedIn: <a href={userData.socialLinks.linkedin}>Профиль</a></p>
-      <p>GitHub: <a href={userData.socialLinks.github}>Профиль</a></p>
     </div>
   );
 }
-
+ 
 
 
 
