@@ -5,18 +5,15 @@ const userProfileData = {
   userDescription: "Любитель React и фронтенд разработки",
   contactInfo: {
     email: "alexey@example.com",
-    phone: "+1234567890"
+    phone: "+1234567890",
   },
   location: {
     city: "Москва",
-    country: "Россия"
+    country: "Россия",
   },
-  interests: ["программирование", "путешествия", "фотография"]
+  interests: ["программирование", "путешествия", "фотография"],
 };
 
-
-const App = () => <UserProfile userData={userProfileData} />
+const App = () => <UserProfile userData={userProfileData} />;
 
 export default App;
-
-
